@@ -26,14 +26,17 @@
   @media (max-width: 321px) {
     .rightwidget{
       /* background-color: #ff00b3; */
-      margin-left: -80px;
+  margin-left: auto;
+    margin-right: auto;
     }
   }
 
   @media (min-width: 322px) and (max-width: 476px) {
     .rightwidget{
       /* background-color: #ff00e1; */
-      margin-left: -60px;
+      margin-left: auto;
+      margin-right: auto;
+
     }
   }
 

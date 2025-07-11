@@ -106,21 +106,21 @@
 .header-home{
     /* background-color: #2600ff !important; */
     width: "100%" !important;
-    margin-left: -100px;  
+    /* margin-left: -100px;   */
     margin-top: 10px;
 }
 .css-16wkr66-MuiPaper-root-MuiAppBar-root{
-    width : 90vw!important;
+    width : 95vw!important;
     margin-right: 15px;
 }
 }
 
 @media (max-width: 320px) {
 .header-home {
-    background-color: #00a2ff !important;
+    /* background-color: #00a2ff !important; */
     width: "100%" !important;
-    margin-left: -90px;  
-    margin-right: 10px;  
+    /* margin-left: -90px;   */
+    margin-right: 20px;  
     margin-top: 10px;
 }
 .css-16wkr66-MuiPaper-root-MuiAppBar-root{

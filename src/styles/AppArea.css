@@ -128,23 +128,26 @@
 
   @media (max-width: 321px) {
     .app-container {
-      width: 90vw;
+      width: 95vw;
+    margin-left: auto;
+      margin-right: auto;
       height: 566px;
       border-radius: 20px;
       padding: 10px;
       /* background-color: #4800ff; */
-      margin-left: -90px;
+      /* margin-left: -90px; */
     } 
   }
 
   @media (min-width: 322px) and (max-width: 476px) {
       .app-container {
-      width: 90vw;
+      width: 95vw;
       height: 566px;
       border-radius: 20px;
       padding: 10px;
       /* background-color: #ff00b3; */
-      margin-left: -92px;
+      margin-left: auto;
+      margin-right: auto;
     } 
   }
 

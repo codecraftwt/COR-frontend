@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 import React from "react";
 import LeftPanel from './LeftPanel';
 import Header from "./Home-header";
@@ -25,6 +25,7 @@ const dispatch = useDispatch();
             },
         },
     });
+    const isMobile = useMediaQuery('(max-width:500px)');
 
     return (
        
@@ -37,60 +38,38 @@ const dispatch = useDispatch();
                 background: 'linear-gradient(to right, rgb(247, 247, 248), rgb(224, 224, 225))'
             }}
         >
+            {!isMobile && (
+                <Box sx={{ flexShrink: 0 }}>
+                    <LeftPanel />
+                </Box>
+            )}
             <Box
                 sx={{
-                    width: 280,
-                    height: '100%',
-                    '@media (max-width:1020px)': { width: 0 },
-                    '@media (max-width:460px)': { width: '100%' }
-                }}
-            >
-                <LeftPanel />
-            </Box>
-
-            <Box
-                sx={{
-                    width: '84%',
+                    width: isMobile ? '100%' : '84%',
                     height: '100%',
                     display: 'flex',
                     flexDirection: 'column',
                 }}
             >
-                <Box sx={{ width: '94%', height: '80px', mb: '40px', ml: '30px' }}>
+                <Box sx={{ width: isMobile ? '100%' : '94%', height: '80px', mb: '40px', ml: isMobile ? 0 : '30px' }}>
                     <Header />
                 </Box>
 
                 <Box
                     sx={{
-                        width: '96.5%',
+                        width: isMobile ? '100%' : '96.5%',
                         height: '110%',
-                        ml: '20px',
+                        ml: isMobile ? 0 : '20px',
                         display: 'flex',
-                        flexDirection: 'row',
+                        flexDirection: isMobile ? 'column' : 'row',
                         alignItems: 'flex-start',
-                        // gap: '43px',
-                        [theme.breakpoints.down('sm')]: { 
-                            flexDirection: 'column',
-                        },
-                        '@media (max-width:460px)': {
-                            flexDirection: 'column',
-                        },
                     }}
                 >
                     <Box
                         sx={{
-                            width: '880px',
+                            width: isMobile ? '100%' : '880px',
                             height: '100%',
-                            ml: '45px',
-                            [theme.breakpoints.down('sm')]: {
-                                width: '100%',
-                                height: 'auto',
-                                ml: 0,
-                            },
-                            '@media (max-width:460px)': {
-                                width: '100%',
-                                ml: 0,
-                            },
+                            ml: isMobile ? 0 : '45px',
                         }}
                         className="AppArea"
                     >
@@ -98,24 +77,16 @@ const dispatch = useDispatch();
                     </Box>      
                     <Box className="rightwidget"
                         sx={{
-                            width: '280px',
+                            width: isMobile ? '100%' : '280px',
                             height: '100%',
-                            ml: '-83px',
-                            [theme.breakpoints.down('sm')]: {
-                                width: '100%',
-                                height: 'auto',
-                                ml: '0',
-                            },
-                            '@media (max-width:460px)': {
-                                width: '100%',
-                                ml: 0,
-                            },
+                            ml: isMobile ? 0 : '-83px',
                         }}
                     >
                         <Rightwidget email={email} initialProgress={onboardingProgress} />
                     </Box>
                 </Box>
             </Box>
+            {isMobile && <LeftPanel />}
         </Box>
     );
 };
