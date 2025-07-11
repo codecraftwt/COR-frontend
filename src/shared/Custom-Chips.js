@@ -6,7 +6,8 @@ import {
   IconButton,
   Typography
 } from '@mui/material';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+// import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import AddCircleOutlineRoundedIcon from '@mui/icons-material/AddCircleOutlineRounded';
 
 const ChipInputField = ({ label, value = [], onChange }) => {
   const [inputValue, setInputValue] = useState('');
@@ -129,7 +130,7 @@ const ChipInputField = ({ label, value = [], onChange }) => {
         />
 
         <IconButton onClick={handleAddChip} sx={{ padding: '6px' }}>
-          <ArrowDropDownIcon />
+          <AddCircleOutlineRoundedIcon />
         </IconButton>
       </Box>
     </Box>

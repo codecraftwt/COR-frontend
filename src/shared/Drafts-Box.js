@@ -239,93 +239,112 @@ const DraftBox = () => {
       }}>
         Drafts
       </Typography>
-       <Typography variant="h6" sx={{ mt: 2, mb: 1, fontWeight: 600 }}>
+      <Typography variant="h6" sx={{ mt: 2, mb: 1, fontWeight: 600 }}>
         Recent
       </Typography>
+      {/* Responsive scrollable table header + cards */}
       <Box
         sx={{
-          display: 'flex',
-          alignItems: 'center',
-          px: 2,
-          py: 1,
-          borderRadius: 2,
-          background: '#FFFFFF',
-          fontWeight: 600,
-          color: '#0C3944',
-          fontSize: '1rem',
-          minWidth: 600,
-          overflowX: isMobile ? 'auto' : 'visible',
-          whiteSpace: isMobile ? 'nowrap' : 'normal',
+          width: '100%',
+          maxWidth: '100vw',
+          overflowX: { xs: 'auto', md: 'visible' },
         }}
       >
-        <Box flex={2} minWidth={0} pl={2} display="flex" alignItems="center">
-          Title
-          <Box display="flex" flexDirection="column" ml={0.5}>
-            <IconButton size="small" onClick={() => handleSort('content')} sx={{ p: 0 }}>
-              <KeyboardArrowUpOutlinedIcon fontSize="inherit" color={sortConfig.key === 'content' && sortConfig.direction === 'asc' ? 'primary' : 'inherit'} />
-            </IconButton>
-            <IconButton size="small" onClick={() => handleSort('content')} sx={{ p: 0 }}>
-              <KeyboardArrowDownOutlinedIcon fontSize="inherit" color={sortConfig.key === 'content' && sortConfig.direction === 'desc' ? 'primary' : 'inherit'} />
-            </IconButton>
+        <Box
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            px: { xs: 1, sm: 2 },
+            py: 1,
+            borderRadius: 2,
+            background: '#FFFFFF',
+            fontWeight: 600,
+            color: '#0C3944',
+            fontSize: { xs: '0.95rem', sm: '1rem' },
+            minWidth: { xs: '500px', sm: '600px', md: '0' },
+            width: '100%',
+            whiteSpace: { xs: 'nowrap', md: 'normal' },
+          }}
+        >
+          <Box flex={2} minWidth={0} pl={2} display="flex" alignItems="center">
+            Title
+            <Box display="flex" flexDirection="column" ml={0.5}>
+              <IconButton size="small" onClick={() => handleSort('content')} sx={{ p: 0 }}>
+                <KeyboardArrowUpOutlinedIcon fontSize="inherit" color={sortConfig.key === 'content' && sortConfig.direction === 'asc' ? 'primary' : 'inherit'} />
+              </IconButton>
+              <IconButton size="small" onClick={() => handleSort('content')} sx={{ p: 0 }}>
+                <KeyboardArrowDownOutlinedIcon fontSize="inherit" color={sortConfig.key === 'content' && sortConfig.direction === 'desc' ? 'primary' : 'inherit'} />
+              </IconButton>
+            </Box>
           </Box>
-        </Box>
-        <Box flex={1} textAlign="center" display="flex" alignItems="center" justifyContent="center">
-          App
-          <Box display="flex" flexDirection="column" ml={0.5}>
-            <IconButton size="small" onClick={() => handleSort('type')} sx={{ p: 0 }}>
-              <KeyboardArrowUpOutlinedIcon fontSize="inherit" color={sortConfig.key === 'type' && sortConfig.direction === 'asc' ? 'primary' : 'inherit'} />
-            </IconButton>
-            <IconButton size="small" onClick={() => handleSort('type')} sx={{ p: 0 }}>
-              <KeyboardArrowDownOutlinedIcon fontSize="inherit" color={sortConfig.key === 'type' && sortConfig.direction === 'desc' ? 'primary' : 'inherit'} />
-            </IconButton>
+          <Box flex={1} textAlign="center" display="flex" alignItems="center" justifyContent="center">
+            App
+            <Box display="flex" flexDirection="column" ml={0.5}>
+              <IconButton size="small" onClick={() => handleSort('type')} sx={{ p: 0 }}>
+                <KeyboardArrowUpOutlinedIcon fontSize="inherit" color={sortConfig.key === 'type' && sortConfig.direction === 'asc' ? 'primary' : 'inherit'} />
+              </IconButton>
+              <IconButton size="small" onClick={() => handleSort('type')} sx={{ p: 0 }}>
+                <KeyboardArrowDownOutlinedIcon fontSize="inherit" color={sortConfig.key === 'type' && sortConfig.direction === 'desc' ? 'primary' : 'inherit'} />
+              </IconButton>
+            </Box>
           </Box>
-        </Box>
-        <Box flex={1} textAlign="center" display="flex" alignItems="center" justifyContent="center">
-          By
-          <Box display="flex" flexDirection="column" ml={0.5}>
-            <IconButton size="small" onClick={() => handleSort('email')} sx={{ p: 0 }}>
-              <KeyboardArrowUpOutlinedIcon fontSize="inherit" color={sortConfig.key === 'email' && sortConfig.direction === 'asc' ? 'primary' : 'inherit'} />
-            </IconButton>
-            <IconButton size="small" onClick={() => handleSort('email')} sx={{ p: 0 }}>
-              <KeyboardArrowDownOutlinedIcon fontSize="inherit" color={sortConfig.key === 'email' && sortConfig.direction === 'desc' ? 'primary' : 'inherit'} />
-            </IconButton>
+          <Box flex={1} textAlign="center" display="flex" alignItems="center" justifyContent="center">
+            By
+            <Box display="flex" flexDirection="column" ml={0.5}>
+              <IconButton size="small" onClick={() => handleSort('email')} sx={{ p: 0 }}>
+                <KeyboardArrowUpOutlinedIcon fontSize="inherit" color={sortConfig.key === 'email' && sortConfig.direction === 'asc' ? 'primary' : 'inherit'} />
+              </IconButton>
+              <IconButton size="small" onClick={() => handleSort('email')} sx={{ p: 0 }}>
+                <KeyboardArrowDownOutlinedIcon fontSize="inherit" color={sortConfig.key === 'email' && sortConfig.direction === 'desc' ? 'primary' : 'inherit'} />
+              </IconButton>
+            </Box>
           </Box>
-        </Box>
-        <Box flex={1} textAlign="center" display="flex" alignItems="center" justifyContent="center">
-          Date
-          <Box display="flex" flexDirection="column" ml={0.5}>
-            <IconButton size="small" onClick={() => handleSort('date')} sx={{ p: 0 }}>
-              <KeyboardArrowUpOutlinedIcon fontSize="inherit" color={sortConfig.key === 'date' && sortConfig.direction === 'asc' ? 'primary' : 'inherit'} />
-            </IconButton>
-            <IconButton size="small" onClick={() => handleSort('date')} sx={{ p: 0 }}>
-              <KeyboardArrowDownOutlinedIcon fontSize="inherit" color={sortConfig.key === 'date' && sortConfig.direction === 'desc' ? 'primary' : 'inherit'} />
-            </IconButton>
+          <Box flex={1} textAlign="center" display="flex" alignItems="center" justifyContent="center">
+            Date
+            <Box display="flex" flexDirection="column" ml={0.5}>
+              <IconButton size="small" onClick={() => handleSort('date')} sx={{ p: 0 }}>
+                <KeyboardArrowUpOutlinedIcon fontSize="inherit" color={sortConfig.key === 'date' && sortConfig.direction === 'asc' ? 'primary' : 'inherit'} />
+              </IconButton>
+              <IconButton size="small" onClick={() => handleSort('date')} sx={{ p: 0 }}>
+                <KeyboardArrowDownOutlinedIcon fontSize="inherit" color={sortConfig.key === 'date' && sortConfig.direction === 'desc' ? 'primary' : 'inherit'} />
+              </IconButton>
+            </Box>
           </Box>
+          <Box flexShrink={0} width={48} />
         </Box>
-        <Box flexShrink={0} width={48} />
-      </Box>
-     
-      <Box
-        minWidth={100}
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 2,
-        }}
-      >
-        {renderDraftCards(sortedRecent)}
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 2,
+            width: '100%',
+            minWidth: { xs: '500px', sm: '600px', md: '0' },
+          }}
+        >
+          {renderDraftCards(sortedRecent)}
+        </Box>
       </Box>
       <Typography variant="h6" sx={{ mt: 3, mb: 1, fontWeight: 600 }}>
         Past Week
       </Typography>
       <Box
         sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 2,
+          width: '100%',
+          maxWidth: '100vw',
+          overflowX: { xs: 'auto', md: 'visible' },
         }}
       >
-        {renderDraftCards(sortedPastWeek)}
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 2,
+            width: '100%',
+            minWidth: { xs: '500px', sm: '600px', md: '0' },
+          }}
+        >
+          {renderDraftCards(sortedPastWeek)}
+        </Box>
       </Box>
       <Snackbar
         open={snackbar.open}

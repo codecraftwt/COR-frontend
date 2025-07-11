@@ -56,16 +56,16 @@ const PressArea = ({ onPressReleaseGenerated }) => {
   return (
     <Box
       sx={{
-        ml: '40px',
-        bgcolor: '#ffffff',
-        width: { xs: '100%', sm: '100%', md: '100%', lg: '530px' },
-        height: { xs: 'auto', sm: 'auto', md: 'auto',lg: '550px' }, 
+        bgcolor: '#ffffffff',
+        width: { xs: '100%', sm: '100%', md: '420px', lg: '530px' },
+        height: { xs: 'auto', sm: 'auto', md: 'auto', lg: '550px' },
+        marginLeft: { xs: '0px', sm: '0px', md: '10px', lg: '40px' },
         display: 'flex',
         flexDirection: 'column',
         borderRadius: "25px",
         boxShadow: '4px 2px 5px rgba(0, 0, 0, 0.1)',
         margin: '0px',
-        padding: { xs: '20px', sm: '30px' }, 
+        padding: { xs: '2px', sm: '5px', md: '10px', lg: '20px', xl: '30px' },
         overflow: 'hidden',
       }}
     >
@@ -82,6 +82,7 @@ const PressArea = ({ onPressReleaseGenerated }) => {
           overflowY: 'auto',
           maxHeight: '90vh',
           overflowX: 'hidden',
+          marginLeft: { xs: '0px', sm: '0px', md: '0px', lg: '0px' },
         }}
       >
         <Texfield
@@ -163,12 +164,12 @@ const PressArea = ({ onPressReleaseGenerated }) => {
       <Box
         sx={{
           width: '100%',
-          height: '90px',
           borderRadius: '0px 0px 25px 25px',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          mt: 2, 
+          paddingBottom: 0,
+          marginBottom: 0,
         }}
       >
         <CustomButton
@@ -181,7 +182,9 @@ const PressArea = ({ onPressReleaseGenerated }) => {
             color: 'white',
             fontFamily: 'Urbanist, sans-serif',
             fontSize: { xs: '16px', sm: '20px' }, 
-            fontWeight: 600
+            fontWeight: 600,
+            marginBottom: 0,
+            paddingBottom: 0,
           }}
         />
       </Box>

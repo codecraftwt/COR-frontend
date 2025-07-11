@@ -193,7 +193,7 @@ const Signup = () => {
         </Grid>
 
         <Grid item xs={12} sm={8} md={8} lg={8} className="signup-form">
-          <Box className="signup-form-box" sx={{
+          <Box className="signup-form-box hide-scrollbar" sx={{
             width: { xs: '90%', sm: '80%', md: '600px', lg: '650px' },
             marginLeft: { xs: 0, sm: 0, md: 'auto', lg: '195px' },
           }}>

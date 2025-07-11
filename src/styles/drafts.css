@@ -4,9 +4,8 @@
 
 @media (max-width: 426px) {
     .drafts-container{
-        padding-top: 100px;
-        margin-left: -80px;
-        margin-right: 10px;
+        padding-top: 80px;
+        /* margin-left: -85px; */
 
     }
     .left-panel{
@@ -19,7 +18,7 @@
         z-index: 1;
     }
     .draft-box {
-        margin-left: 300px;
+        /* margin-left: 300px; */
         width: 100% !important;
         height: 100vh;
         border-radius: 30px !important;
@@ -54,24 +53,33 @@
         border-radius: 30px !important;
         background-color: #FFFFFF;
         padding: 20px;
+        margin-top: 20px;
     }
 }
 
 @media (min-width: 430px) and (max-width: 769px) {
     .draft-box{
-        margin-left: 20px;
-        border-radius: 30px !important;
+        margin-left: 10px;
+        border-radius: 20px !important;
         padding: 20px;
         background-color: #FFFFFF;
-        margin-top: 40px;
+        margin-top: 20px;
     }
 }
 
 @media (min-width: 320px) and (max-width: 429px) {
     .draft-box{
-        margin-left: 100px;
-        border-radius: 30px !important;
-        background-color: #FFFFFF;
-        width: auto;
+        /* margin-left: 10px; */
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 10px !important;
+        background-color: #ffffff;
+        width: 95vw;
+        padding: 10px;
+
     }
 }
+
+/* .css-sv3aw0{
+    margin-left: 10px!important;
+} */

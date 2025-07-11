@@ -37,7 +37,7 @@ const Blogs = () => {
                     <IconButton onClick={handleGoHome} size="small" sx={{ mr: 0.5 }}>
                         <img src={leftarrow} alt="Info" style={{ width: 24, height: 24, color: '#555' }} />
                     </IconButton>
-                    <Typography variant="h5" sx={{ fontSize: 24, color: '#333', fontWeight: '600' }}>
+                    <Typography variant="h5" sx={{ fontSize: { xs: 18, sm: 20, md: 24 }, color: '#333', fontWeight: '600', whiteSpace: 'nowrap' }}>
                         Generative Blog Posts
                     </Typography>
                 </Box>
@@ -59,7 +59,7 @@ const Blogs = () => {
                     <Box sx={{ width: { xs: '100%', sm: '100%', md: '45%', lg: '40%' }, padding: 1, overflowY: 'auto' }}>
                         <BLogArea onBlogGenerated={setGeneratedBlog} />
                     </Box>
-                    <Box sx={{ width: { xs: '100%', sm: '100%', md: '55%', lg: '60%' }, padding: 0, pt:1, overflowY: 'auto', height: 'auto' }}>
+                    <Box sx={{ width: { xs: '100%', sm: '100%', md: '55%', lg: '60%' }, padding: 0, pt:1, overflowY: 'auto', height: 'auto',pb:2 }}>
                         <Texteditor initialContent={draftContent || generatedBlog || 'Publish'} draftId={draftId} userEmail={userEmail} />
                     </Box>
                 </Box>

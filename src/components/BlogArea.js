@@ -39,14 +39,14 @@ const BLogArea = ({ onBlogGenerated }) => {
             sx={{
                 bgcolor: '#ffffff',
                 width: { xs: '100%', sm: '100%', md: '420px', lg: '558px' },
-                height: { xs: 'auto', sm: 'auto', md: '550px',lg:"550px" },
+                height: { xs: 'auto', sm: 'auto', md: '550px', lg: '550px' },
                 display: 'flex',
                 flexDirection: 'column',
                 borderRadius: "25px",
                 boxShadow: '4px 2px 5px rgba(0, 0, 0, 0.1)',
                 marginLeft:{xs:'0px', sm:'0px', md:'10px', lg:'-20px'} ,
                 padding: { xs: '2px', sm: '5px', md: '10px', lg: '20px' ,xl:'30px'},
-                overflow: 'hidden',
+                overflow: { xs: 'visible', sm: 'visible', md: 'hidden', lg: 'hidden' },
             }}
         >
             <Box
@@ -59,8 +59,8 @@ const BLogArea = ({ onBlogGenerated }) => {
                     borderRadius: '25px!important',
                     gap: 2,
                     justifyContent: 'flex-start',
-                    overflowY: 'auto',
-                    maxHeight: '90vh',
+                    overflowY: { xs: 'visible', sm: 'visible', md: 'auto', lg: 'auto' },
+                    maxHeight: { xs: 'none', sm: 'none', md: '90vh', lg: '90vh' },
                     overflowX: 'hidden',
                 }}
             >
@@ -166,11 +166,12 @@ const BLogArea = ({ onBlogGenerated }) => {
             <Box
                 sx={{
                     width: '100%',
-                    height: '90px',
                     borderRadius: '0px 0px 25px 25px',
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
+                    paddingBottom: 0,
+                    marginBottom: 0,
                 }}
             >
                 <CustomButton
@@ -183,7 +184,8 @@ const BLogArea = ({ onBlogGenerated }) => {
                         color: 'white',
                         fontFamily: 'Urbanist, sans-serif',
                         fontSize: '20px',
-                        mt: 2.4,
+                        marginBottom: 0,
+                        paddingBottom: 0,
                         fontWeight: 600
                     }}
                 />

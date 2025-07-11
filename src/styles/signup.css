@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-bottom: 15px;
 }
 
 .signup-sidebox {
@@ -332,4 +333,14 @@ signup-btn{
    width: 100%!important;
 
   }
+}
+
+.hide-scrollbar {
+  overflow-y: auto; /* or scroll */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
