@@ -1,0 +1,264 @@
+
+.signin-button:hover {
+  background-color: transparent !important;
+  color: black !important;
+}
+
+.forget-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.reset-sidebox {
+  width: 40%;
+  height: 100vh;
+}
+
+.reset-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding: 40px;
+}
+
+.heading-box {
+  width: 100%;
+}
+
+.forget-subtext {
+  width: 100%;
+  max-width: 453px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 15px;
+  color: #878787;
+}
+
+.input-field {
+  padding-top: 10px;
+  width: 100%;
+  max-width: 453px;
+}
+
+.reset-button {
+  width: 100%;
+  max-width: 453px;
+  margin-top: 20px;
+}
+
+.back-to-signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+
+@media (max-width: 320px) {
+  .forget-container {
+    flex-direction: column;
+    padding: 12px;
+    height: auto;
+    align-items: center!important;
+    justify-content: center!important;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .reset-sidebox {
+    display: none;
+  }
+
+  .reset-contents {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .forget-subtext {
+    font-size: 13px;
+    padding-left: 105px;
+    width: 350px!important;
+    text-align: center;
+
+  }
+
+  .reset-button {
+    font-size: 14px;
+  }
+  .input-field{
+    width: 300px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  .forget-container {
+    flex-direction: column;
+    padding: 12px;
+    height: auto;
+    align-items: center!important;
+    justify-content: center!important;
+    text-align: center;
+    padding-left: 20px;
+    overflow: hidden;
+  }
+
+  .reset-sidebox {
+    display: none;
+  }
+
+  .reset-contents {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .forget-subtext {
+    font-size: 13px;
+    padding-left: 105px;
+    width: 350px!important;
+    text-align: center;
+
+  }
+
+  .reset-button {
+    font-size: 14px;
+  }
+}
+
+
+@media (min-width: 377px) and (max-width: 600px) {
+  .forget-container {
+    flex-direction: column;
+    padding: 12px;
+    height: auto;
+    align-items: center!important;
+    justify-content: center!important;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .reset-sidebox {
+    display: none;
+  }
+
+  .reset-contents {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .forget-subtext {
+    font-size: 13px;
+    padding-left: 105px;
+    width: 350px!important;
+    text-align: center;
+
+  }
+  .input-field{
+    padding-left: 5px;
+  }
+
+  .reset-button {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .forget-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .reset-sidebox {
+    display: block;
+    width: 50%;
+    height: 100vh;
+  }
+
+  .reset-contents {
+    width: 50%;
+    padding-right: 125px;
+
+  }
+
+  .forget-subtext {
+    width: 100%;
+    max-width: 360px;
+    font-size: 15px;
+    margin: 0 auto;
+    text-align: left;
+    margin-left: 45px!important;
+  }
+
+  .reset-button {
+    width: 100%;
+    max-width: 360px;
+    font-size: 18px;
+  }
+.reset-heading{
+  margin-left: 45px!important;
+}
+  .back-to-signin {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 360px;
+    margin-left: -65px;
+  }
+  .reset-button-box{
+    margin-left: 45px;
+  }
+}
+
+
+@media (min-width: 901px) and (max-width: 1024px) {
+  .forget-container{
+    height: auto;
+  }
+  .forget-subtext{
+    width: 360px;
+    width: 100%;
+    max-width: 453px;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: left;
+    margin-left: 0px!important;
+  }
+  .back-to-signin{
+    margin-left: -320px;
+
+  }
+  .reset-contents {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .forget-container{
+    height: auto;
+  }
+  .forget-subtext{
+    width: 360px;
+    width: 100%;
+    max-width: 453px;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: left;
+    margin-left: 0px!important;
+  }
+  .back-to-signin{
+    margin-left: -320px;
+
+  }
+  .reset-contents {
+    padding: 0px;
+  }
+}

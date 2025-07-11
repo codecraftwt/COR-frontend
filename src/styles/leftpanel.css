@@ -1,0 +1,22 @@
+.logout-button {
+  text-transform: none;
+  border-radius: 10px;
+  color: #1e1e1e;
+  font-weight: 600 !important;
+  width: 230px;
+  height: 40px;
+  border: none;
+}
+
+.logout-button:hover {
+  color: #000000;
+  background-color: #c3cfff;
+}
+
+.logout-box{
+  margin-left: 35px;
+}
+
+.css-rizt0-MuiTypography-root{
+  font-weight: 600 !important;
+}

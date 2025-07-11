@@ -1,0 +1,187 @@
+.newpass-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 55px; */
+    padding: 10px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden!important;
+  }
+  
+  .logobox {
+    position: absolute;
+    top: 50px;
+    left: 21px;
+    height: 40px;
+    width: 98px;
+  }
+  
+  .input-pass {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .input-label {
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  
+  .input-feild {
+    margin-bottom: 16px;
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    background-color: white;
+    box-shadow: 5px 8px 5px rgba(3, 3, 3, 0.08);
+    box-sizing: border-box;
+  }
+  
+  .Reset-btn {
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    padding-top: 1px;
+  }
+  
+  
+  
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    .newpass-container {
+      margin-top: 40px;
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0px!important;
+    }
+  
+    .logobox {
+      top: 40px;
+      left: 20px;
+    }
+  
+    .input-label {
+      font-size: 15px;
+      max-width: 100%;
+      padding-bottom: 10px;
+      margin-left: 26px!important;
+    }
+  
+    .input-feild {
+      max-width: 100%;
+      margin-top: 10px!important;
+      height: 38px;
+      width: 400px!important;
+
+    }
+  .input-subtext{
+    margin-left: 25px!important;
+    width: 360px;
+    margin-bottom: 10px!important;
+  }
+  .reset-btn-box{
+    width: 200px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top: 0px!important;
+  }
+  
+  }
+  
+  
+  @media (min-width: 377px) and (max-width: 600px) {
+    .newpass-container {
+      margin-top: 40px;
+      padding: 20px;
+      overflow: hidden;
+    }
+  
+    .logobox {
+      top: 30px;
+      left: 16px;
+      width: 80px;
+      height: auto;
+    }
+  
+    .input-label {
+      font-size: 18px;
+    }
+  
+    .input-feild {
+      height: 36px;
+    }
+  
+    .Reset-btn {
+        height: 48px;
+        margin: 20px auto 0 auto; 
+        display: block;
+      }
+      
+  }
+  
+  
+  @media (min-width: 321px) and (max-width: 376px) {
+    .newpass-container {
+      margin-top: 40px;
+      padding: 16px;
+     align-items: center!important;
+     justify-content: center!important;
+     padding-left: 0px;
+
+    }
+  
+    .logobox {
+      top: 25px;
+      left: 12px;
+      width: 75px;
+    }
+  
+    .input-label {
+      font-size: 16px;
+    }
+  
+    .input-feild {
+      height: 34px;
+    }
+  
+    .Reset-btn {
+      height: 42px;
+    }
+  }
+  
+  
+  @media (max-width: 320px) {
+    .newpass-container {
+      margin-top: 40px;
+      padding: 12px;
+      padding-left: 0px;
+    }
+  
+    .logobox {
+      top: 20px;
+      left: 10px;
+      width: 70px;
+    }
+  
+    .input-label {
+      font-size: 15px;
+    }
+  
+    .input-feild {
+      height: 32px;
+    }
+  
+    .Reset-btn {
+      height: 40px;
+    }
+  }
+  

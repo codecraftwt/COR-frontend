@@ -1,0 +1,151 @@
+
+.app-container {
+    width: 800px;
+    height: 566px;
+    border-radius: 28px;
+    padding: 32px;
+    background-color: #ffffff;
+  }
+  
+  .app-title {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .span{
+    font-weight: 600;
+  }
+  
+  .app-subtitle {
+    color: #878787;
+    font-size: 15px;
+  }
+  
+  .card-common {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    margin-top: 20px;
+    border-radius: 25px!important;
+    /* width: 650px; */
+    width: 100%;
+    height: 130px;
+    position: relative;
+    transition: all 0.3s ease;
+    background-color: white;
+  }
+  
+  .card-hovered {
+    background-color: #E2FFFE !important;
+    border: 2px solid #81CAC8;
+  }
+  
+  .icon-box {
+    width: 56px;
+    height: 56px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+  }
+  
+  .button-common {
+    min-width: 100px;
+    padding: 6px 1px;
+    border-radius: 25px!important;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size:13px!important;
+    font-weight: 600!important;
+  }
+  
+  .icon-button {
+    position: absolute;
+    bottom: 38px;
+    right: 2px;
+    height: 1px;
+    width: 2px;
+  }
+  
+  .css-blwiov{
+    height: 100%;
+  }
+  /* .app-cards{
+    display: flex;
+   width: 100%;
+   gap: 10px;
+  } */
+
+  @media screen and (min-width: 1420px) {
+    .app-container {
+      width: 87%;
+      height: 566px;
+      border-radius: 20px;
+      padding: 35px;
+      /* background-color: #ff0000; */
+    }
+    
+  }
+
+  @media (min-width: 1001px) and (max-width: 1400px) {
+    .app-container {
+      width: 80%;
+      height: 566px;
+      border-radius: 20px;
+      padding: 35px;
+      /* background-color: #eeff00; */
+      margin-left: -50px;
+    } 
+    .css-17fex38{
+      width: 520px!important;
+    }
+  }
+
+  @media (min-width: 765px) and (max-width: 1000px) {
+    .app-container {
+      width: 110%;
+      height: 566px;
+      border-radius: 20px;
+      padding: 35px;
+      /* background-color: #00ff00; */
+      margin-left: -35px;
+    } 
+  }
+
+  /* @media (min-width: 420px) and (max-width: 764px) {
+    .app-container {
+      width: 115%;
+      height: 566px;
+      border-radius: 20px;
+      padding: 35px;
+      background-color: #00fff7;
+      margin-left: -80px;
+    } 
+  } */
+
+  @media (max-width: 321px) {
+    .app-container {
+      width: 90vw;
+      height: 566px;
+      border-radius: 20px;
+      padding: 10px;
+      /* background-color: #4800ff; */
+      margin-left: -70px;
+    } 
+  }
+
+  @media (min-width: 322px) and (max-width: 476px) {
+      .app-container {
+      width: 90vw;
+      height: 566px;
+      border-radius: 20px;
+      padding: 10px;
+      /* background-color: #ff00b3; */
+      margin-left: -92px;
+    } 
+  }
+
+  

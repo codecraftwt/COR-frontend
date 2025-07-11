@@ -1,0 +1,176 @@
+.onboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden !important;
+}
+
+
+@media (max-width: 320px) {
+    .onboard-container {
+        flex-direction: column;
+        padding-left: 5px;
+        padding-top: 20px;
+    }
+
+    .onboard-sidebox {
+        display: none;
+    }
+
+    .onboard-form {
+        width: 100% !important;
+        padding: 20px;
+    }
+
+    .onboard-buttons {
+        padding-top: 2;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 600px) {
+    .onboard-container {
+        flex-direction: column;
+        padding-left: 18px;
+        overflow: hidden;
+    }
+
+    .onboard-sidebox {
+        display: none;
+    }
+
+    .onboard-form {
+        width: 100% !important;
+    }
+
+    .onboard-buttons {
+        padding-top: 3;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .onboard-container {
+        flex-direction: row;
+    }
+
+    .onboard-sidebox {
+        font-size: 15px !important;
+        width: 40%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        padding-left: 0;
+    }
+
+    .onboard-form {
+        width: 70%;
+        margin-left: 45%;
+        padding: 40px;
+        height: 100vh;
+        overflow-y: auto;
+    }
+}
+
+@media (min-width: 901px) {
+    .onboard-container {
+        flex-direction: row;
+    }
+
+    .onboard-sidebox {
+        font-size: 15px !important;
+        width: 40%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        padding-left: 0;
+    }
+
+
+    .onboard-inputs {
+        max-width: 410px;
+        width: 100%;
+    }
+
+    .onboard-form {
+        width: 70%;
+        margin-left: 45%;
+        padding: 40px;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .onboard-form {
+        width: 70%;
+        margin-left: 45%;
+        padding: 40px;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+
+    .onboard-container {
+        margin-left: 0;
+        flex-direction: row;
+    }
+
+    .onboard-sidebox {
+        font-size: 15px !important;
+        width: 40%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        padding-left: 0;
+    }
+
+
+    .onboard-inputs {
+        max-width: 410px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1441px) {
+    .onboard-form {
+        width: 70%;
+        margin-left: 45%;
+        padding: 40px;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+
+    .onboard-container {
+        margin-left: 0;
+        flex-direction: row;
+        background-color: rgb(254, 255, 240);
+    }
+
+    .onboard-sidebox {
+        font-size: 15px !important;
+        width: 40%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        padding-left: 0;
+    }
+
+
+    .onboard-inputs {
+        max-width: 410px;
+        width: 100%;
+    }
+}
+
+.css-1lxtuxb-MuiButtonBase-root-MuiButton-root{
+    font-weight: 600 !important;
+}

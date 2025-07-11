@@ -1,0 +1,80 @@
+.table-container {
+  width: 900px;
+  max-width: 1000px;
+  padding: 19px;
+}
+
+.draft-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.table-container .MuiTable-root {
+  max-height: 400px;
+  overflow-y: auto;
+  display: block;
+}
+
+.MuiTableCell-root {
+  padding: 16px;
+}
+
+.MuiTableBody-root {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.MuiTableRow-root {
+  height: 60px;
+  border-radius: 20px;
+  width: 100%;
+
+
+}
+
+.MuiTableRow-root:hover {
+  background-color: #7CADB9;
+  cursor: pointer;
+}
+
+.MuiTableHead-root {
+  background-color: #f4f4f4;
+}
+
+.MuiTable-root {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.MuiChip-root {
+  margin: 4px;
+}
+
+.MuiIconButton-root {
+  margin-left: 8px;
+}
+
+.MuiTableCell-head {
+  font-weight: bold;
+  background-color: #f4f4f4;
+}
+
+@media (max-width: 600px) {
+  .MuiTableCell-root {
+    padding: 8px !important;
+  }
+  
+  .MuiTypography-body2 {
+    font-size: 0.75rem !important;
+  }
+  
+  .MuiChip-root {
+    height: 24px;
+  }
+  
+  .MuiSvgIcon-root {
+    font-size: 1rem !important;
+  }
+}

@@ -1,0 +1,347 @@
+/* Base Styles */
+.admin-box {
+    display: flex;
+    flex-direction: row;
+    background-color: #F0F7F8;
+    border: rgb(255, 255, 255) 5px solid;
+    height: 100%;
+    width: 100vw;
+}
+
+.left-panel {
+    /* width: 280px; */
+    background-color: #f4f4f4;
+}
+
+.admin-form {
+    /* margin-right: 200px!important; */
+    margin-top: 50px!important;
+    padding-left: 80px;
+    padding-top: 10px;
+    height: 100%;
+    background-color: #ffffff;
+    
+    color: black;
+    max-width: 1100px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.form-section {
+    width: 370px;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.password-action-btns {
+    margin-top: 2px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.save-btn {
+    width: 80px;
+    margin-right: 30px;
+    border: black 1px;
+}
+
+.cancel-btn {
+    width: 90px;
+}
+
+.cancel-btn:hover {
+    background-color: rgb(5, 5, 5);
+    color: #ffffff;
+}
+
+.save-btn:hover {
+    background-color: rgb(5, 5, 5);
+    color: #ffffff;
+}
+
+.reset-password {
+    height: 100px;
+    width: 770px;
+    background-color: #F6F5FE;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    line-height: 2px;
+    margin-top: 20px;
+}
+
+.text-content {
+    text-align: center;
+}
+
+.password-fields {
+    display: flex;
+    flex-direction: row;
+    gap: 30PX;
+}
+
+.profile-textfield .MuiOutlinedInput-root,
+.admin-form .MuiOutlinedInput-root {
+    height: 48px;
+    font-size: 16px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-textfield .MuiInputBase-input,
+.admin-form .MuiInputBase-input {
+    height: 48px !;
+    padding-left: 12px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.reset-password-btn {
+    margin: auto;
+    margin-right: 30px;
+    border-radius: 20px;
+    background-color: black !important;
+    color: #ffffff !important;
+    width: 200px;
+}
+
+.reset-btn {
+    margin-top: auto;
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+.reset-btn:hover {
+    background-color: #2E8B57 !important;
+    color: white !important;
+}
+
+.text-chips-field {
+    gap: 0;
+}
+
+.text-chips-field .MuiOutlinedInput-root {
+    height: 40px !important;
+    align-items: center;
+}
+
+.text-chips-field .MuiInputBase-input {
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.delete-acc {
+    margin-top: 10px;
+    width: 770px;
+    height: 120px;
+    display: flex;
+    padding-left: 30px;
+    padding-top: 10px;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.del-acc-btn {
+    margin-top: 15px;
+    border-radius: 20px;
+    background-color: black !important;
+    color: #ffffff !important;
+    width: 200px;
+    font-weight: 600 !important;
+}
+
+@media (max-width: 426px) {
+
+    .left-panel {
+        background-color: white;
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .admin-form {
+        margin-left: 0px;
+        margin-top: 80px!important;
+        padding-left: 20px;
+        padding-top: 10px;
+        height: 100vh;
+        background-color: #ffffff;
+        color: black;
+        width: 100% !important;
+        border-radius: 15px;
+    }
+
+    .reset-btn {
+        height: 40px;
+        width: 120px;
+        font-size: 11px !important;
+        border-radius: 25px !important;
+        letter-spacing: 1px;
+    }
+
+    .del-acc-btn {
+        height: 40px;
+        width: 120px;
+        font-size: 11px!important;
+        border-radius: 25px !important;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width: 768px) {
+    .left-panel {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        /* width: 280px; */
+        z-index: 1000;
+        border-right: 1px solid #e0e0e0;
+    }
+
+    .admin-form {
+        /* margin-left: 320px!important; */
+        margin-top: 70px!important;
+        padding-left: 60px;
+        padding-top: 30px;
+        /* width: calc(100% - 280px) !important;*/
+        width: 100% !important; 
+        box-sizing: border-box;
+        border-radius: 20px;
+        height: 100%;
+    }
+
+    .admin-form-fields {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .reset-password {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .company-field,
+    .password-field {
+        box-sizing: border-box;
+    }
+
+    .btn-field {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .reset-pass {
+        width: 95%!important;
+        box-sizing: border-box;
+        border-radius: 15px;
+
+    }
+    .reset-btn {
+        height: 40px;
+        width: 140px;
+        font-size: 10px;
+        border-radius: 25px !important;
+        letter-spacing: 1px;
+    }
+    .del-acc-btn {
+        height: 40px;
+        width: 180px;
+        font-size: 10px;
+        border-radius: 25px !important;
+
+    }
+
+}
+
+
+@media  (min-width: 1024px)  {
+    .admin-form {
+        margin-left: 300px;
+        margin-top: 0;
+        padding-left: 120px;
+        padding-top: 40px;
+        /* width: calc(100% - 280px) !important; */
+        box-sizing: border-box;
+        border-radius: 20px;
+        height: 100%;
+    }
+      .admin-form-fields {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .reset-password {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .company-field,
+    .password-field {
+        width: 410px !important;
+        box-sizing: border-box;
+        margin-right: 200px;
+    }
+
+    .btn-field {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .reset-pass {
+        width: 95%!important;
+        box-sizing: border-box;
+        border-radius: 15px;
+
+    }
+    .reset-btn {
+        height: 40px;
+        width: 140px;
+        font-size: 10px;
+        border-radius: 25px !important;
+        letter-spacing: 1px;
+    }
+    .del-acc-btn {
+        height: 40px;
+        width: 180px;
+        font-size: 10px;
+        border-radius: 25px !important;
+
+    }
+}
+
+@media (max-width: 800px) {
+  .password-row {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+  .password-row > * {
+    margin-right: 0 !important;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .password-row {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+  .password-row > * {
+    margin-right: 0 !important;
+    margin-bottom: 16px;
+  }
+}
+
+.css-yovxpb-MuiButtonBase-root-MuiButton-root{
+    font-weight: 600 !important;
+}

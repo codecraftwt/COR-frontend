@@ -1,0 +1,288 @@
+.profile-form-container {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Urbanist', sans-serif;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.profile-left-panel {
+    background-color: #f4f4f4;
+    width: 280px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    border-right: 1px solid #e0e0e0;
+}
+
+.profile-content {
+    margin-left: 280px;
+    background-color: #f4f4f4;
+    padding: 40px 60px;
+    min-height: 100vh;
+    width: calc(100% - 280px);
+    box-sizing: border-box;
+}
+
+.profile-form-wrapper {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px 60px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.profile-title {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.profile-grid {
+    margin-bottom: 24px;
+}
+
+
+/* .profile-textfield {
+    height: 52px;
+    width: 100%;
+    font-family: 'Urbanist', sans-serif;
+    background-color: rgb(241, 4, 4);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0;
+}  */
+
+.profile-textfield .MuiOutlinedInput-root {
+    height: 48px;
+    font-size: 16px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-textfield .MuiInputBase-input {
+    height: 48px;
+    padding-left: 12px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.profile-textfield .MuiOutlinedInput-root fieldset {
+    border-radius: 16px;
+    border-color: #ffffff;
+}
+
+.profile-textfield .MuiOutlinedInput-root:hover fieldset {
+    border-color: black;
+}
+
+.profile-textfield .MuiOutlinedInput-root.Mui-focused fieldset {
+    border-color: #ffffff;
+}
+
+.profile-textfield .react-international-phone-input-container{
+    background-color: rgb(255, 255, 255)!important;
+}
+
+ .css-1blvszr-MuiButtonBase-root-MuiButton-root{
+    font-weight: 800 !important;
+   }
+
+/* Buttons */
+.profile-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0;
+}
+
+.profile-button {
+    font-family: 'Urbanist';
+    font-weight: 800;
+    font-size: 14px;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    color: black!important;
+}
+
+.profile-button:hover {
+    background-color: black;
+    color: rgb(250, 249, 249)!important;
+
+    border-color: black;
+}
+
+@media (max-width: 426px) {
+    .profile-left-panel {
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .profile-title {
+        font-size: 32px !important;
+        font-weight: 600 !important;
+    }
+
+    .profile-content {
+        margin-left: 0;
+        margin-top: 100px;
+        padding: 0px;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .profile-form-wrapper {
+        border-radius: 15px;
+        padding: 30px 20px;
+    }
+
+    .profile-button {
+        font-size: 11px;
+        width: 100px;
+        height: 40px;
+        border-radius: 25px !important;
+        letter-spacing: 5px;
+    }
+
+    .profile-form-container {
+        background: #ebebec;
+    }
+}
+
+@media (min-width: 768px) {
+    .profile-left-panel {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 280px;
+        z-index: 1000;
+        border-right: 1px solid #e0e0e0;
+    }
+
+    .profile-title {
+        font-size: 32px !important;
+        font-weight: 600 !important;
+    }
+
+    .profile-content {
+        margin-left: 280px;
+        padding: 10px 10px;
+        width: calc(100% - 280px);
+        background-color: #f4f4f4;
+        min-height: 100vh;
+    }
+
+
+    .profile-form-wrapper {
+        border-radius: 20px;
+        padding: 40px 60px;
+    }
+
+    .profile-button {
+        font-size: 11px;
+        width: 100px;
+        height: 40px;
+        border-radius: 25px !important;
+        letter-spacing: 5px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .profile-left-panel {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 280px;
+        z-index: 1000;
+        border-right: 1px solid #e0e0e0;
+    }
+
+    .profile-content {
+        margin-left: 280px;
+        padding: 40px 60px;
+        width: calc(100% - 280px);
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .profile-title {
+        font-size: 32px !important;
+        font-weight: 600 !important;
+    }
+
+    .profile-form-wrapper {
+        border-radius: 20px;
+        padding: 40px 60px;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .profile-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .profile-textfield {
+        width: 100% !important;
+        flex: 1 1 100%;
+        box-sizing: border-box;
+    }
+
+    .profile-button {
+        font-size: 11px;
+        width: 100px;
+        height: 40px;
+        border-radius: 25px !important;
+        letter-spacing: 1px;
+    }
+
+      .css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input {
+        width: 410px !important;
+    }
+
+    .css-w76bbz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+        width: 405px !important;
+    }
+     .profile-textfield > .react-international-phone-input-container{
+        width: 435px !important;
+    }
+
+}
+
+.profile-content .input-pair > .profile-textfield {
+  width: 335px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.profile-content .input-pair > .MuiFormControl-root {
+  width: 335px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.profile-content input[name="phone"] {
+  background: #f0f7ff;
+  border: 2px solid #1976d2;
+  border-radius: 8px;
+  color: #1976d2;
+  font-weight: bold;
+}
